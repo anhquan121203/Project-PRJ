@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details</title>
+
+
+        <!--link bootstrap cdn and J-query, Javascript file to html file-->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+        <link rel="stylesheet" href="style.css">
+
+<!--sytling the images-->
+
+<style> 
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    
+    cursor: pointer;
+}
+    /*provide styling to the text*/
+
+    .sproduct select{
+        display: block;
+        padding: 5px 10px;
+
+    }
+
+    .sproduct input{
+        width:50px;
+        height: 40px;
+        padding-left:  10px;
+        font-size: 16px;
+        margin-right: 10px;
+
+    }
+    /*removing the outline from Quantity*/
+    .sproduct input:focus{
+        outline: none;
+    }
+
+    /*change the color of add to cart but-btn*/
+
+    .buy-btn{
+        background: coral;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+    
+    </style>
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/09f99f5f53.js" crossorigin="anonymous"></script>
+
+
+
+
+</head>
+<body>
+
+    <div><audio autoplay>
+        <source src="Music/music2.mp3" type="audio/mpeg"> 
+      </audio>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+        <div class="container">    <!--adding extra space-->
+          <img src="Images/logo.png" class="logo" width="150"></a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="navbar-toggler-icon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                    <!--add active to highlight that you are on home page-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Men</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Women</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bags</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Best Seller</a> 
+                </li>                   
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a> 
+                </li>
+
+                <li class="search-container">
+                    <input type="text" name="search" placeholder="Search..." class="search-input">
+                    <a href="#" class="search-btn">
+                        <i class="fa fa-search"></i></a>
+                </li>
+
+                <li class="nav-item">
+
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <i class="fas fa-user" aria-hidden="true"></i>
+
+                </li>
+            </ul>
+              
+              
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+              <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="Product/pro1.png"  id="MainImg" alt="">                <!--fluid makes image responsive-->
+            
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="Product/pro2.png" width="100%" class="small-img" alt="">
+
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="Product/pro3.png" width="100%" class="small-img" alt="">
+                        
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="Product/pro4.png" width="100%" class="small-img" alt="">
+                        
+                    </div>
+
+                    
+                </div>
+
+
+
+            </div>
+            <!--selection of T-shirt-->
+              <div class=" col-lg-6 col-md-12 col-12">
+         <h6>Home /T-Shirt</h6>
+         <h3 class="py-4">Rising Dragon T-shirt</h3>
+         <h2>$17.05</h2>
+         <select class="my-3" >
+            <option>Select Size</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>Oversize</option>
+        
+         </select>
+
+<input type="number" value="1">
+<button class="buy-btn">Add To Cart</button>
+          <h4 >Product Details</h4>
+          <span>
+            <ul>
+                <li>Material: Cotton.</li>
+                <li>Relaxed Fit.</li>
+                <li>The print on the front of the shirt uses silk-screen printing technology.</li>
+                <li>Branded leather label is sewn on the back of the shirt.</li>
+            </ul> 
+            
+            
+            </span>
+              </div> 
+
+        </div>
+
+
+      </section>
+
+      
+<!--featured products with price& ratings-->
+
+<section id="featured" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+        <h3>Related Products</h3>
+
+        <!--to place line below text-->
+        <hr class="mx-auto">
+        <p>Here You can check out our new products with fair price on Fashion Shop.</p>
+    </div>
+        <div class="row mx-auto container-fluid">  <!--remove slider & spaces from boundary-->
+           <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+             <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\feature6.webp" alt="">
+         <div class="star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+    </div>
+        <h5 class="p-name">Clarkin Sneakers</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+</div>
+
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+      <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\featured2.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+ <h5 class="p-name">College Backpack</h5>
+ <h4 class="p-price">$89</h4>
+ <button class="buy-btn">Buy Now</button>
+</div>
+
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+      <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\featured3.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+ <h5 class="p-name">SPo2 Smart Watch</h5>
+ <h4 class="p-price">$76</h4>
+ <button class="buy-btn">Buy Now</button>
+</div>
+
+
+    <div class="product text-center col-lg-3 col-md-4 col-12">      <!--text to be in center-->
+      <img class="img-fluid mb-4" src="C:\Users\HP\Desktop\Website\W-images\featured4.webp" alt="">
+  <div class="star">
+     <i class="fa fa-star" aria-hidden="true"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+     <i class="fa-solid fa-star"></i>
+</div>
+ <h5 class="p-name">Water Bottle</h5>
+ <h4 class="p-price">$59</h4>
+ <button class="buy-btn">Buy Now</button>
+</div>
+</div>
+</section>
+
+      <!--footer collusion-->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5"> <!--remove slider-->
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="Images/logoColl.png" class="logo" width="160"></a>
+                <p class="pt-3"> Trendy Threads: Where fashion meets flair, and style finds its voice. Step into a world
+                    of sartorial elegance and endless inspiration. </p>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Combo</a></li>
+                    <li><a href="#">New arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">clothes</a></li>
+
+                </ul>
+            </div>
+            <!-- location, email -->
+
+            <div class="footer-one col-lg-3 col-md-6 col-12" >
+                <h5 class="pb-2">Contact Us</h5>
+                <div class="location">
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Lot E2a-7, Street D1, D. D1, Long Thanh My Thu Duc City, Ho Chi Minh City 700000, Vietnam</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(+84)0921484453</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>trendythreads2024@gmail.com</p>
+                </div>
+            </div>
+            </div>
+
+
+            <!-- Instagram -->
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Instagram </h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="W-images\payment.png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                    <p>trendythreads@2024. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <a href="https://www.facebook.com/profile.php?id=100093248209429"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/trendythread.04/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+   var MainImg = document.getElementById('MainImg');
+   var smallimg = document.getElementsByClassName("small-img");
+
+   /*change the souce file img to show in large*/
+
+   smallimg[0].onclick = function(){
+    MainImg.src = smallimg[0].src;
+}
+
+smallimg[1].onclick = function(){
+    MainImg.src = smallimg[1].src;
+}
+
+smallimg[2].onclick = function(){
+    MainImg.src = smallimg[2].src;
+}
+
+smallimg[3].onclick = function(){
+    MainImg.src = smallimg[3].src;
+}
+
+</script>
+
+    </body>
+</html>

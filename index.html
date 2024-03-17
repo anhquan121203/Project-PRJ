@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Threads</title>
+
+
+    <!--link bootstrap cdn and J-query, Javascript file to html file-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/09f99f5f53.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+
+</head>
+
+<body>
+    <div><audio autoplay>
+        <source src="Music/music3.mp3" type="audio/mpeg"> 
+      </audio>
+    </div>
+    
+
+    <!--NAVIGATION fixed navigation-bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+        <div class="container"> <!--adding extra space-->
+            <img src="Images/logo.png" class="logo" width="150"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="navbar-toggler-icon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                        <!--add active to highlight that you are on home page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Finall/View/men.html">Men</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bags</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best Seller</a> 
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a> 
+                    </li>
+
+                   <li class="search-container">
+                        <input type="text" name="search" placeholder="Search..." class="search-input">
+                        <a href="#" class="search-btn">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="Form Login/index.html"><i class="fas fa-user" aria-hidden="true"></i>
+                        </a>
+                        <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--add background image,text and a button-->
+
+    <section id="home">
+        <div class="container">
+            
+            <h5>NEW ARRIVALS</h5>
+            <h1><span>Best Price</span> This Year</h1> add span to change color
+            <p>The best classic Design items on</p>
+            <p>fashion shop. </p>
+            <h2>Up to <span>70% Off</span> -All T-shirts & Accessories</h2>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+
+    <!--add local brand section-->
+    <section id="brand" class="container"> <!--remove slider added class-->
+        <div class="row m-0 py-5">
+
+            
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand1.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand2.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand3.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand4.png" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand5.jpg" alt="">
+            <img class="img-fluid col-lg-2 col-md-4 col-6" src="Images/brand6.png" alt="">
+
+
+
+        </div>
+    </section>
+
+
+    <!--add accessories & remove slider-->
+    <section id="new" class="w-100">
+        <div class="row p-0 m-0">
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img class="img-fluid" src="Images/new1.png" alt="">
+                <div class="details">
+                    <h2>T-shirt and Hoddie</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img src="Images/new2.png" alt="">
+                <div class="details">
+                    <h2>Clothing</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+
+            <div class="one col-lg-4 col-md-12 col-12 p-0">
+                <img src="Images/new3.png" alt="">
+                <div class="details">
+                    <h2>Gucci Bags</h2>
+                    <button class="text-uppercase">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--The Products-->
+
+    <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Dirtycoins</h3>
+
+            <!--to place line below text-->
+            <hr class="mx-auto">
+            <p>DirtyCoins becomes a brand of strong, bold fashion spirit but still approachable and widely accessible.</p>
+        </div>
+        <div class="row mx-auto container-fluid"> <!--remove slider & spaces from boundary-->
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <a href="sproduct.html"><img class="img-fluid mb-4" src="Images/feature6.webp" alt=""></a>
+                
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Rising Dragon T-shirt</h5>
+                <h4 class="p-price">$17.05</h4>
+                <!-- <button class="buy-btn">Buy Now</button> -->
+                <a href="sproduct.html"><button class="buy-btn">Buy Now</button></a> 
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/featured2.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">More Money More Problems</h5>
+                <h4 class="p-price">$28.02</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/featured3.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">DirtyCoins Print Cardigan</h5>
+                <h4 class="p-price">$23.96</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/featured4.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Track Jacket</h5>
+                <h4 class="p-price">$28.02</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--banner for autumn season-->
+    <section id="banner" class="my-5 py-5">
+        <div class="container">
+            <h4>MID SEASON'S SALE</h4>
+            <h1>Autumn Collection<br>UP TO 20% OFF</h1>
+            <button class="text-uppercase">Shop Now</button>
+        </div>
+
+    </section>
+
+
+    <!--Women's wear Dresses-->
+
+    <section id="clothes" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>JM Dress</h3>
+
+            <!--to place line below text-->
+            <hr class="mx-auto">
+            <p>JM Dress are an epitome of femininity and elegance in the world of fashion.</p>
+        </div>
+        <div class="row mx-auto container-fluid"> <!--remove slider & spaces from boundary-->
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/jump1.jpeg" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Vest collar Dress</h5>
+                <h4 class="p-price">$56.49</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/jump2.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Off-the-shoulder dress</h5>
+                <h4 class="p-price">$349</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/jump3.jpeg" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Shoulder-covered shirt</h5>
+                <h4 class="p-price">$23.69</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/jump4.jpeg" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Twisted horizontal neck dress</h5>
+                <h4 class="p-price">$12.87</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--best watches section-->
+
+    <section id="clothes" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Levents Pants</h3>
+
+            <!--to place line below text-->
+            <hr class="mx-auto">
+            <p>Levents is a trend-leading street fashion brand with simple, modern design style and
+                <br>high standard products for global youth to confidently express their personality..</p>
+        </div>
+        <div class="row mx-auto container-fluid"> <!--remove slider & spaces from boundary-->
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/pant1.webp" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Levents® Classic Wash</h5>
+                <h4 class="p-price">$24.68</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/pant2.webp" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Levents® Khaki Pants</h5>
+                <h4 class="p-price">$20.64</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/pant3.webp" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Levents® Classic SweatPants</h5>
+                <h4 class="p-price">$18.21</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/pant4.webp" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Levents® Classic Baggy</h5>
+                <h4 class="p-price">$24.68</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Shoes Nike-->
+
+    <section id="Cotton Bedsheets" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Shoes</h3>
+
+            <!--to place line below text-->
+            <hr class="mx-auto">
+            <p>Fresh voices, fire fits, and new kicks. Shop a brand new collection inspired by strong women.</p>
+        </div>
+        <div class="row mx-auto container-fluid"> <!--remove slider & spaces from boundary-->
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/shoes1.jpg" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Air Jordan 3 Retro Craft "Ivory"</h5>
+                <h4 class="p-price">$210</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/shoes2.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Nike Air Max 270</h5>
+                <h4 class="p-price">$160</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/shoes3.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Ozweego Celox Shoes</h5>
+                <h4 class="p-price">$133.54</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/shoes4.png" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Superstar Shoes</h5>
+                <h4 class="p-price">$105.21</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bags Gucci Gang -->
+    <section id="Cotton Bedsheets" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Bags Gucci Gang</h3>
+
+            <!--to place line below text-->
+            <hr class="mx-auto">
+            <p>Gucci provides after sales services for the products purchased from Gucci.comany
+                <br>Gucci boutique or any other Gucci-authorized retailer.</p>
+        </div>
+        <div class="row mx-auto container-fluid"> <!--remove slider & spaces from boundary-->
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/bag1.avif" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Ophidia gg small tote bag</h5>
+                <h4 class="p-price">$2300</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/bag2.webp" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Gg marmont mini bag </h5>
+                <h4 class="p-price">$1950</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/bag3.avif" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Gucci jackie notte mini bag</h5>
+                <h4 class="p-price">$3800</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-12"> <!--text to be in center-->
+                <img class="img-fluid mb-4" src="Images/bag4.avif" alt="">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Mini bucket shoulder bag</h5>
+                <h4 class="p-price">$2500</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--footer collusion-->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5"> <!--remove slider-->
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="Images/logoColl.png" class="logo" width="160"></a>
+                <p class="pt-3"> Trendy Threads: Where fashion meets flair, and style finds its voice. Step into a world
+                    of sartorial elegance and endless inspiration. </p>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Combo</a></li>
+                    <li><a href="#">New arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">clothes</a></li>
+
+                </ul>
+            </div>
+            <!-- location, email -->
+
+            <div class="footer-one col-lg-3 col-md-6 col-12" >
+                <h5 class="pb-2">Contact Us</h5>
+                <div class="location">
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>Lot E2a-7, Street D1, D. D1, Long Thanh My Thu Duc City, Ho Chi Minh City 700000, Vietnam</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(+84)0921484453</p>
+                </div>
+
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>trendythreads2024@gmail.com</p>
+                </div>
+            </div>
+            </div>
+
+
+            <!-- Instagram -->
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Instagram </h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="W-images\5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="W-images\payment.png" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                    <p>trendythreads@2024. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <a href="https://www.facebook.com/profile.php?id=100093248209429"><i class="fa fa-facebook"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/trendythread.04/"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
